@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sample</title>
+
+    <style type="text/css">
+        body{
+            background-color: black;
+        }
+        body .container{
+            margin: auto;
+        }
+        body .inputContainer{
+            margin: auto;
+        }
+        .container{
+            width: 40%;
+            display: flex;
+        }
+        #number{
+            width: 75%;
+            background-color: black;
+            border: 5px solid white;
+        }
+        #operator{
+            background-color: black;
+            border: 5px solid white;
+            width: 90%;
+            margin: auto;
+            text-align: center;
+        }
+        #number .rows{
+            width: 100%;
+            display: flex;
+        }
+        #number .rows input{
+            background-color: black;
+            border: 2px solid white;
+            color: #fff;
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            margin: 10px;
+            font-size: 30px;
+        }
+        #operator .rowss{
+            width: 100%;
+            
+        }
+        #operator .rowss input{
+            background-color: black;
+            border: 2px solid white;
+            color: #fff;
+            height: 76px;
+            width: 75px;
+            border-radius: 50%;
+            margin: 10px;
+            font-size: 30px;
+        }
+        .inputContainer{
+            background-color: black;
+            border: 4px solid white;
+            width: 39.3%;
+            margin: auto;
+        }
+        .inputContainer input{
+            background-color: black;
+            border: 3px solid white;
+            color: white;
+            margin: 10px;
+            width: 480px;
+            height: 50px;
+            font-size: 45px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="inputContainer">
+        <input type="text" id="inputField">
+    </div>
+    <div class="container">
+        <div id="number">
+            <div class="rows">
+                <input type="button" value="7" onclick="inputField.value += '7' ">
+                <input type="button" value="8" onclick="inputField.value += '8' ">
+                <input type="button" value="9" onclick="inputField.value += '9' ">
+            </div>
+            <div class="rows">
+                <input type="button" value="4" onclick="inputField.value += '4' ">
+                <input type="button" value="5" onclick="inputField.value += '5' ">
+                <input type="button" value="6" onclick="inputField.value += '6' ">
+            </div>
+            <div class="rows">
+                <input type="button" value="1" onclick="inputField.value += '1' ">
+                <input type="button" value="2" onclick="inputField.value += '2' ">
+                <input type="button" value="3" onclick="inputField.value += '3' ">
+            </div>
+            <div class="rows">
+                <input type="button" value="C" onclick="inputField.value = '' ">
+                <input type="button" value="0" onclick="inputField.value += '0' ">
+                <input type="button" value="." onclick="inputField.value += '.' ">
+            </div>
+        </div>
+        <div id="operator">
+            <div class="rowss">
+                <input type="button" value="/" onclick="inputField.value += '/' ">
+                <input type="button" value="*" onclick="inputField.value += '*' ">
+                <input type="button" value="-" onclick="inputField.value += '-' ">
+                <input type="button" value="+" onclick="inputField.value += '+' ">
+                <input type="button" value="=" onclick="eval()" class="equal">
+            </div>
+        </div>
+    </div>
+
+    <!--<script type="text/javascript">
+        function click7(){
+            document.getElementById("inputField").value=7;
+        }
+        function click8(){
+            document.getElementById("inputField").value=8;
+        }
+        function click9(){
+            document.getElementById("inputField").value=9;
+        }
+        function click4(){
+            document.getElementById("inputField").value=4;
+        }
+        function click5(){
+            document.getElementById("inputField").value=5;
+        }
+        function click6(){
+            document.getElementById("inputField").value=6;
+        }
+        function click1(){
+            document.getElementById("inputField").value=1;
+        }
+        function click2(){
+            document.getElementById("inputField").value=2;
+        }
+        function click3(){
+            document.getElementById("inputField").value=3;
+        }
+        function click0(){
+            document.getElementById("inputField").value=0;
+        }
+        function clickDot(){
+            document.getElementById("inputField").value=".";
+        }
+        function clickC(){
+            document.getElementById("inputField").value="";
+        }
+        function clickDivide(){
+            document.getElementById("inputField").value='/';
+        }
+        function clickMultiply(){
+            document.getElementById("inputField").value='*';
+        }
+        function clickSubtract(){
+            document.getElementById("inputField").value='-';
+        }
+        function clickAdd(){
+            document.getElementById("inputField").value='+';
+        }
+        function clickEquals(){
+            document.getElementById("inputField").value='=';
+        }
+    </script> -->
+</body>
+
+</html>
